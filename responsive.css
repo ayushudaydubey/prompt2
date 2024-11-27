@@ -1,0 +1,67 @@
+@media screen and (max-width: 600px) {
+  
+  main {
+    height: 100vh;
+    width: 115vw;
+    background-image: url(khamkhor--I-McziCxxM-unsplash.jpg);
+    background-position: right;
+ 
+}
+.overlay {
+  width: 115vw;
+ 
+}
+.logo img {
+  width: 20vw;
+}
+nav {
+  height: 10vh;
+  width: 115vw;
+}
+.nav-links{
+  gap: 4vw;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-btn{
+  gap: 1vw;
+}
+.nav-btn button {
+  padding: 10px 20px;
+  font-size: 10px;
+
+}
+.page-top{
+padding: 0 2vw;
+gap: 5vw;
+}
+.page-top h1 {
+  font-size: 45px;
+}
+.page-top p {
+  font-size: 25px;
+
+  width: 80vw;
+}
+.page-top input {
+  border: none;
+  padding: 1vw 5vw;
+  font-size: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 10px rgb(0, 0, 0);
+  background-color: rgb(254 255 0);
+  color: rgb(0, 0, 0);
+}
+.page-bottom{
+  width: 100%;
+}
+.bottom-right{
+  padding: 10vw 0;
+}
+.bottom-right p{
+  font-size: 20px;
+  margin-top: 5vw;
+}
+}

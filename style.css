@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(khamkhor--I-McziCxxM-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+nav {
+  height: 10vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  font-family: "Merriweather", serif;
+}
+
+.logo img {
+  width: 10vw;
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 10vw;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.nav-links a:hover{
+ 
+  color:orangered;
+}
+.nav-btn {
+  display: flex;
+  gap: 4vw;
+}
+
+.nav-btn button {
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav-btn button:hover{
+  background-color: orangered;
+  color: white;
+}
+.page {
+  height: 90vh;
+  
+}
+
+.page-top {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  padding: 1vw 5vw;
+  height: 50%;
+ 
+  
+}
+
+.page-top h1 {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Protest Revolution", sans-serif;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.page-top p {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  width: 50vw;
+  color: white;
+  font-family: "Merriweather", serif;
+}
+
+.page-top input {
+  border: none;
+  padding: 1vw 5vw;
+  font-size: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 10px rgb(0, 0, 0);
+  background-color: rgba(255, 251, 0, 0.555);
+  color: rgb(0, 0, 0);
+}
+
+.page-top input::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+  font-family: "Merriweather", serif;
+}
+
+.page-bottom {
+  display: flex;
+  flex-direction:  row;
+  gap: 2vw;
+padding:  0 3vw;
+ justify-content: space-between;
+  width: 70%;
+  height: 50%;
+
+}
+
+.bottom-left {
+  height: 100%;
+  width: 60%;
+ 
+
+}
+.bottom-left img{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: 10% 80%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.bottom-right{
+  padding: 3vw 1vw;
+  display: flex;
+  flex-direction: column;
+gap: 2vw;
+  width: 50%;
+
+}
+.bottom-right h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Protest Revolution", sans-serif;
+
+}
+.bottom-right p{
+  font-size: 25px;
+  color: white;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
