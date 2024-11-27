@@ -17,12 +17,23 @@
 nav {
   height: 10vh;
   width: 100vw;
-  gap: 2vw;
+  justify-content: space-around;
+ 
   
 }
 .nav-links{
-  gap: 1vw;
+  display: none;
 }
+.ri-menu-line{
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+}
+.ri-menu-line:hover{
+color: orangered; 
+font-size: 27px;
+}
+
 .nav-links a {
   text-decoration: none;
   font-size: 14px;
@@ -32,8 +43,10 @@ nav {
 
 }
 .nav-btn button {
+
   padding: 10px 20px;
   font-size: 10px;
+
 
 }
 .page-top{
@@ -48,17 +61,21 @@ height: 40%;
 }
 .page-top p {
   font-size: 13px;
-
+  letter-spacing: 0px;
+  word-spacing: 0px;
   width: 80vw;
 }
 .page-top input {
   border: none;
-  padding: 2vw 10vw;
-  font-size: 25px;
+  padding: 2vw 5vw;
+  font-size: 10px;
   border-radius: 15px;
   box-shadow: 3px 5px 10px rgb(0, 0, 0);
   background-color: rgb(255 255 255 / 60%);
   color: rgb(0, 0, 0);
+}
+.page-top input::placeholder{
+  font-size: 12px;
 }
 .page-bottom{
   width: 100%;
@@ -73,5 +90,7 @@ height: 40%;
 .bottom-right p{
   font-size: 13px;
   margin-top: 3vw;
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 }
