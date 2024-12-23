@@ -1,182 +1,196 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-html,
+/* General Styling */
 body {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #e4f3ff);
+  color: #333;
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
-  background-image: url(khamkhor--I-McziCxxM-unsplash.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  background: url('khamkhor--I-McziCxxM-unsplash.jpg') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Navigation */
 nav {
-  height: 10vh;
-  width: 100vw;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3vw;
-  font-family: "Merriweather", serif;
-  background-color: rgba(255, 255, 255, 0.329);
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-  width: 10vw;
-
+nav .logo img {
+  width: 80px;
+  object-fit: cover;
+  height: auto;
 }
 
 .nav-links {
   display: flex;
-  gap: 10vw;
+  gap: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 23px;
+  color: #fff;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
 }
-.nav-links a:hover{
- 
-  color:orangered;
-}
-.nav-btn {
-  display: flex;
-  gap: 4vw;
+
+.nav-links a:hover {
+  color: #00aaff;
 }
 
 .nav-btn button {
-  padding: 10px 30px;
-  font-size: 20px;
+  background-color: #00aaff;
   border: none;
-  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn button:hover {
+  background-color: #0077cc;
+}
+
+.ri-menu-line {
+  display: none;
+  font-size: 24px;
+  color: #fff;
   cursor: pointer;
 }
-.nav-btn button:hover{
-  background-color: orangered;
-  color: white;
-}
-.ri-menu-line{
-  display: none;
-}
+
+/* Page Content */
 .page {
-  height: 90vh;
-  
-}
-
-.page-top {
-
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
-  align-items: center;
-  padding: 1vw 5vw;
-  height: 50%;
- 
-  
+  text-align: center;
+  color: #fff;
+  padding: 20px;
 }
 
 .page-top h1 {
-  font-size: 70px;
-  font-weight: 900;
-  text-align: center;
-  font-family: "Protest Revolution", sans-serif;
-  letter-spacing: 5px;
-  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 20px 0;
 }
 
 .page-top p {
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  width: 50vw;
-  color: white;
-  font-family: "Merriweather", serif;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 2px black;
 }
 
-.page-top input {
-  border: none;
-  padding: 1vw 5vw;
-  font-size: 25px;
-  border-radius: 15px;
-  box-shadow: 3px 5px 10px rgb(0, 0, 0);
-  background-color: rgba(190, 188, 55, 0.37);
-  color: rgb(0, 0, 0);
+.page-top input[type="search"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #00aaff;
+  border-radius: 5px;
+  outline: none;
 }
 
-.page-top input::placeholder {
-  color: rgb(0, 0, 0);
-  font-size: 27px;
-  font-family: "Merriweather", serif;
-}
-
+/* Page Bottom */
 .page-bottom {
   display: flex;
-  flex-direction:  row;
-  gap: 2vw;
-padding:  0 3vw;
- justify-content: space-between;
-  width: 70%;
-  height: 50%;
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0000005e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .bottom-left {
-  height: 100%;
-  width: 60%;
- 
-
-}
-.bottom-left img{
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-  object-position: 10% 80%;
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
-}
-.bottom-right{
-  padding: 3vw 1vw;
-  display: flex;
-  flex-direction: column;
-gap: 2vw;
-  width: 50%;
-
-}
-.bottom-right h2{
-  font-size: 40px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
+  flex: 1;
   text-align: center;
-  letter-spacing: 3px;
-  font-family: "Protest Revolution", sans-serif;
-
 }
-.bottom-right p{
-  font-size: 25px;
-  color: white;
-  font-family: "Merriweather", serif;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+
+.adventure-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.adventure-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.adventure-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .page-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }
