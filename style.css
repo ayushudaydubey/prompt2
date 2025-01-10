@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -25,7 +25,7 @@ main {
   box-sizing: border-box;
 }
 
-/* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ nav {
 }
 
 nav .logo img {
-  width: 80px;
+  width: 100px;
   object-fit: cover;
   height: auto;
 }
